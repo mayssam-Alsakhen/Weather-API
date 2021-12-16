@@ -24,7 +24,6 @@ class App extends Component {
     return (
       <div className="app">
         <h1>Mayssam</h1>
-      <img src={storm} alt="storm icon" width={"100px"}/>
       </div>
     );
   }
