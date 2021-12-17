@@ -23,3 +23,99 @@
 div {
   border: 5px solid red;
 }  */
+*{
+  font-family: "Raleway", "sans-serif";
+}
+body{
+  margin: 0;
+  background-color:#00eeff;
+}
+.app{
+  padding: 0;
+  margin: 0;
+}
+
+.navbar{
+
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+background-color: rgb(122, 169, 240);
+}
+button {
+  height: 40px;
+  background-color: rgb(47, 115, 218);
+  border: 0;
+}
+
+
+input{
+  background-color: rgb(122, 169, 240);
+  padding-left: 20px;
+  border: 0 ;
+  font-size: 18px;
+  margin-right: 20px;
+  outline: 0;
+}
+input:focus{
+  border-bottom: solid 1px grey;
+}
+.weather{
+ text-align: center;
+}
+.big{
+  margin-top: 0;
+  color: white;
+}
+.weather h3{
+  display: inline;
+  color: rgb(16, 16, 119);
+}
+.prefor{
+  display: inline;
+  color: rgb(16, 16, 119);
+}
+.prefor2{
+  font-size: small;
+  margin-top: 30px;
+  color: rgb(16, 16, 119);
+}
+.weather img{
+  width: 200px;
+  margin-left: 50px;
+}
+.weaths{
+  display: flex;
+  margin:  70px;
+ justify-content: space-evenly;
+}
+.weaths .time{
+  margin-top: 70px;
+  margin-left: 40px;
+}
+.weaths .temp{
+  margin-left: 25px;
+}
+@media only screen and (max-width: 740px) {
+  .navbar{
+
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  button{
+  border: cornsilk 2px solid;
+  
+  }
+  .weaths{
+ display: flex;
+  margin:  70px;
+ justify-content: space-between;
+ flex-wrap: wrap;
+  }
+
+ .weaths img {
+   width: 150px;
+ } 
+}
