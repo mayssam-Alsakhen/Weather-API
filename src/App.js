@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Search from "./components/Search";
 
-import SayHi, { SayHello } from "./components/WeatherItem";
+import {MainWeather} from "./components/WeatherItem.js";
 import fakeWeatherData from "./fakeWeatherData.json";
 
 //images
@@ -17,6 +17,7 @@ import drizzle from "./img/weather-icons/drizzle.svg";
 //  import unknown from "./img/weather-icons/unknown.svg";
 
 import "./App.css";
+import WeatherItem from "./components/WeatherItem";
 
 class App extends Component {
   constructor(props) {
@@ -34,25 +35,16 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <div className="navbar">
-          <input type="searsh"  placeholder="Type in a city name"/>
-          <div className="b"> <button>FIND WEATHER</button></div>
-        </div>
-        <div className="weather"> 
-        <img src={partlycloudy} alt="partlycloudy icon" />
-        <h4 className="big">overcast clouds</h4>
-        <h3>Temperature</h3> <pre className="prefor">   10°  to  11°C</pre>
-        <pre className="prefor2"><b>  Humidity</b>   78%   <b>pressure</b>   1008.48 </pre>
-        </div>
-
+        <Search />
+        <MainWeather />
         <div className="weaths">
-        <div> <p className="time">03:00</p><img src={partlycloudy} alt="partlycloudy icon"  placeholder="partlycloudy icon" width={"100px"}/> <p className="temp">8°C</p></div>
-        <div> <p className="time">06:00</p><img src={partlycloudy} alt="partlycloudy icon"  placeholder="partlycloudy icon" width={"100px"}/> <p className="temp">9°C</p></div>
-        <div> <p className="time">09:00</p><img src={clear} alt="clear icon"  placeholder="clear icon" width={"100px"}/> <p className="temp">14°C</p></div>
-        <div> <p className="time">12:00</p><img src={clear} alt="clear icon"  placeholder="clear icon" width={"100px"}/> <p className="temp">17°C</p></div>
-        <div> <p className="time">15:00</p><img src={clear} alt="clear icon"  placeholder="clear icon" width={"100px"}/> <p className="temp">18°C</p></div>
-        <div> <p className="time">18:00</p><img src={clear} alt="clear icon"  placeholder="clear icon" width={"100px"}/> <p className="temp">16°C</p></div>
-        <div> <p className="time">21:00</p><img src={partlycloudy} alt="partlycloudy icon" placeholder="partlycloudy icon" width={"100px"}/> <p className="temp">13°C</p></div>
+        <WeatherItem />
+        <WeatherItem />
+        <WeatherItem />
+        <WeatherItem />
+        <WeatherItem />
+        <WeatherItem />
+        <WeatherItem />
         </div>
       </div>
     );

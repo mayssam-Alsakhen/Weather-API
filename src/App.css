@@ -41,7 +41,7 @@ body{
   align-items: center;
   padding: 10px;
   margin: 0;
-background-color: rgb(122, 169, 240);
+  background-color: rgb(122, 169, 240);
 }
 button {
   height: 40px;
